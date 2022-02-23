@@ -129,7 +129,7 @@ if __name__ == '__main__':
 
         if turn == 1:
             count += 1
-            print(f"Player 1 turn: {player1}")
+            print(f"\n Player 1 turn: {player1}")
             position = player_position()
             if space_check(board, position):
                 clear_output()
@@ -168,7 +168,7 @@ if __name__ == '__main__':
                 turn = 1
                 # check if any player has won
                 if win_check(board, player2):
-                    print(f" Player2:{player2} has Won !!")
+                    print(f"\n Player2:{player2} has Won !!")
                     if replay():
                         board = ['#', '', '', '', '', '', '', '', '', '']
                         (player1, player2) = player_pick()
