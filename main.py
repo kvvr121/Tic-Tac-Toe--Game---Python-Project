@@ -126,7 +126,7 @@ if __name__ == '__main__':
     position = 0
     # until board is full, take position, check if its empty and fill accordingly turn wise
     while full_board_check(board) == False:
-
+        #Player 1 turn
         if turn == 1:
             count += 1
             print(f"\n Player 1 turn: {player1}")
@@ -146,14 +146,11 @@ if __name__ == '__main__':
                     else:
                         print("Game Over!!")
                         break
-            # elif count == 9:
-            #     print(f"count is {count}")
-            #     print("Board is full and its a TIE!!!")
-            #     break
             else:
                 print("Position is already filled. Choose another position")
                 turn = 1
                 continue
+        # Player 2 turn
         if turn == 2:
             if count == 9:
                 print("Board is full and its a TIE!!!")
